@@ -1,0 +1,63 @@
+div.message-group-blocked-btn, .theme-dark .messages-wrapper .messages .message-group-blocked, .theme-dark .messages-wrapper .messages .message-group-blocked.revealed{
+    display:none!important;
+}
+
+body::after,
+.callout-backdrop,
+.user-popout::before,
+#user-profile-modal .header::before,
+#pubs-container::before,
+.auth-background,
+.auth-tiling-bg,
+.invite-modal .invite-splash,
+.radio-theme.light label,
+.radio-theme.dark label{
+    background-image: var(--skynet)
+}
+.avatar-large[style*="/a_"]+.comment .username-wrapper:before {
+    background: url('https://canary.discordapp.com/assets/65f0a0df5563e21de7b1aeeafaf31d78.svg') 50% 50% / contain no-repeat;
+    float:left;
+    content: '';
+    width: 21px;
+    height: 16px;
+    margin: 0 5px 0 -5px;
+}
+.avatar-small[style*="/a_"]+.member-inner .member-username:before {
+    background: url('https://canary.discordapp.com/assets/65f0a0df5563e21de7b1aeeafaf31d78.svg') 50% 50% / contain no-repeat;
+    float:left;
+    content: '';
+    width: 21px;
+    height: 16px;
+    margin: 0 5px 0 -5px;
+}
+:root{
+    --skynet:  url("https://surl.im/RRtz");
+}
+/* Change the URLs here to your image and make sure the link starts with https not http */
+.app, #pubslayerroot .layer .ui-standard-sidebar-view {
+    background-image:var(--skynet);
+    background-size: cover !important;
+    background-position: center !important;
+}
+.tooltip{
+    --lvl1: #3D5AFE;
+    background-color: var(--lvl1) !important;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2)!important;
+    padding: 6px 10px;
+    border-radius: 3px;
+    font-size: 13px;
+    z-index: 1000000000000000000;
+    pointer-events: none;
+    animation: opacity 80ms ease;
+}
+
+.tooltip::after {
+    visibility: hidden;
+}
+
+.new-messages-indicator.new-messages-indicator-mention,
+.wrapper-2xO9RX,
+.unread-23Kvxk,
+.guilds-wrapper .guilds .guild .badge {
+    background-color: var(--lvl1);
+}
