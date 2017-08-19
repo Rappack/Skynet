@@ -1,7 +1,7 @@
 div.message-group-blocked-btn, .theme-dark .messages-wrapper .messages .message-group-blocked, .theme-dark .messages-wrapper .messages .message-group-blocked.revealed{
     display:none!important;
 }
-
+body,
 body::after,
 .callout-backdrop,
 .user-popout::before,
